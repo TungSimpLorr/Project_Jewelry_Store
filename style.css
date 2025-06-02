@@ -5,7 +5,7 @@
 }
 .container
 {
-    width: 1500px;
+    width: 1500px; 
     background-color: rgb(198, 211, 19);
 }
 .mg{
@@ -110,7 +110,6 @@ header{
     align-items: center;
     justify-content:center;
    
-  
 }
 a 
 {  
