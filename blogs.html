@@ -4,10 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Blog - Tin Tức Trang Sức</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/3a3ccaffa9.js" crossorigin="anonymous"></script>
+    <style>
+        /* Basic styles for blog content - ideally move to style.css */
+        .main-blog-content {
+            padding: 40px 20px;
+            background-color: #ffffff; /* White background for blog area */
+            width: 100%;
+            box-sizing: border-box;
+        }
 
+        .blog-page-title {
+            text-align: center;
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .blog-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto; /* Center the blog list */
+        }
+
+        .blog-post-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog-post-card img.featured-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-post-content {
+            padding: 20px;
+        }
+
+        .blog-post-content h3 {
+            font-size: 1.5em;
+            color: #1a1a1a;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .blog-post-meta {
+            font-size: 0.9em;
+            color: #777;
+            margin-bottom: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .blog-post-meta .author,
+        .blog-post-meta .date {
+            margin-right: 10px;
+        }
+        .blog-post-excerpt {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .read-more-btn {
+            display: inline-block;
+            background-color: #333; /* Similar to other buttons */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .read-more-btn:hover {
+            background-color: #555;
+        }
+        .mg-blog { /* Margin similar to .mg but specific for blog if needed */
+            height: 5px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
 </head>
 
 <body>
@@ -17,14 +112,88 @@
         loadHTML('#header', './template/header.html');
         loadHTML('#footer', './template/footer.html');
     </script>
-    <div class="container">
+    <div class="container"> <!-- This is the 1500px wide yellow background container -->
 
-     <div id="header"> </div>
+        <div id="header"></div>
 
-     <div id="footer"></div>
+        <div class="mg-blog"></div> <!-- Separator -->
 
-    </div>
-    </div>
+        <main class="main-blog-content">
+            <h1 class="blog-page-title">Tin Tức & Bài Viết Nổi Bật</h1>
+
+            <div class="blog-list">
+                <!-- Blog Post 1 -->
+                <article class="blog-post-card">
+                    <img src="./image/blog-sample-1.jpg" alt="Xu hướng trang sức 2024" class="featured-image">
+                    <div class="blog-post-content">
+                        <h3>Khám Phá Xu Hướng Trang Sức Mới Nhất Năm 2024</h3>
+                        <p class="blog-post-meta">
+                            <span class="author"><i class="fas fa-user"></i> Admin</span>
+                            <span class="date"><i class="fas fa-calendar-alt"></i> 20/07/2024</span>
+                        </p>
+                        <p class="blog-post-excerpt">
+                            Năm 2024 chứng kiến sự lên ngôi của những thiết kế trang sức độc đáo, từ vàng hồng lãng mạn đến đá quý đa sắc màu. Hãy cùng JewelryStore điểm qua những xu hướng không thể bỏ lỡ...
+                        </p>
+                        <a href="#" class="read-more-btn">Đọc thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-post-card">
+                    <img src="./image/blog-sample-2.jpg" alt="Chọn trang sức theo trang phục" class="featured-image">
+                    <div class="blog-post-content">
+                        <h3>Bí Quyết Chọn Trang Sức Phù Hợp Với Từng Loại Trang Phục</h3>
+                        <p class="blog-post-meta">
+                            <span class="author"><i class="fas fa-user"></i> Chuyên Gia</span>
+                            <span class="date"><i class="fas fa-calendar-alt"></i> 15/07/2024</span>
+                        </p>
+                        <p class="blog-post-excerpt">
+                            Trang sức không chỉ là phụ kiện làm đẹp mà còn thể hiện phong cách cá nhân. Làm thế nào để chọn trang sức hợp với bộ đồ công sở, dạo phố hay dạ tiệc? Khám phá ngay!
+                        </p>
+                        <a href="#" class="read-more-btn">Đọc thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-post-card">
+                    <img src="./image/blog-sample-3.jpg" alt="Bảo quản trang sức" class="featured-image">
+                    <div class="blog-post-content">
+                        <h3>Mẹo Vặt Bảo Quản Trang Sức Luôn Sáng Bóng Như Mới</h3>
+                        <p class="blog-post-meta">
+                            <span class="author"><i class="fas fa-user"></i> Admin</span>
+                            <span class="date"><i class="fas fa-calendar-alt"></i> 10/07/2024</span>
+                        </p>
+                        <p class="blog-post-excerpt">
+                            Để những món trang sức yêu thích của bạn luôn giữ được vẻ đẹp ban đầu, việc bảo quản đúng cách là vô cùng quan trọng. Cùng tìm hiểu các mẹo hữu ích và dễ thực hiện.
+                        </p>
+                        <a href="#" class="read-more-btn">Đọc thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                 <!-- Blog Post 4 (Example without image initially) -->
+                <article class="blog-post-card">
+                    <!-- <img src="./image/blog-sample-4.jpg" alt="Ý nghĩa các loại đá quý" class="featured-image"> -->
+                    <div class="blog-post-content">
+                        <h3>Ý Nghĩa Sâu Sắc Của Các Loại Đá Quý Phổ Biến</h3>
+                         <p class="blog-post-meta">
+                            <span class="author"><i class="fas fa-user"></i> Nhà Sưu Tầm</span>
+                            <span class="date"><i class="fas fa-calendar-alt"></i> 05/07/2024</span>
+                        </p>
+                        <p class="blog-post-excerpt">
+                            Mỗi loại đá quý không chỉ mang vẻ đẹp lôi cuốn mà còn ẩn chứa những ý nghĩa phong thủy và tâm linh đặc biệt. Tìm hiểu về kim cương, ruby, sapphire và nhiều hơn nữa.
+                        </p>
+                        <a href="#" class="read-more-btn">Đọc thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <div class="mg-blog"></div> <!-- Separator -->
+
+        <div id="footer"></div>
+
+    </div> <!-- End .container -->
+    </div> <!-- End #container -->
 </body>
 
 </html>
