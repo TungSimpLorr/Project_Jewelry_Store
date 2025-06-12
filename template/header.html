@@ -1,47 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>header</title>
-    
-</head>
-<body>
-       <header>
-            <div id="top-bar" class="text-top-bar">
-                <p>Mua sắm phụ kiện trang sức tại JewelryStore - Liên hệ : 0123456789</p>
-            </div>
-            <nav id="menu-bar">
-                <div class="box-logo"><img src="../image/logo.png" alt="logo" class="logo-img"></div>
-                <ul class="text-menu">
-                    <li><a href="./index.html">Home</a></li>
-                    <li class="dropdown-product">
-                        <a href="./product.html">Product</a>
-                        <div class="box-content-dropdown">
-                            <ul class="text-dropdown">
-                                <li><a href="./product.html">Nhẫn</a></li>
-                                <li><a href="./product.html">Dây chuyền</a></li>
-                                <li><a href="./product.html">Khuyên tai</a></li>
-                                <li><a href="./product.html">Lắc tay</a></li>
-                                <li><a href="./product.html">Đồng hồ</a></li>
-                            </ul>
-
-                        </div>
-                    </li>
-
-                    <li><a href="./introduce.html">Introduce</a></li>
-                    <li><a href="./blogs.html">Blogs</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-
-                <div class="box-icon">
-                    <i class="fa-solid fa-magnifying-glass" id="cart-search-icon"></i>
-                    <i class="fa-solid fa-cart-shopping " id="cart-shopping-icon"></i>
-                    <i class="fa-solid fa-circle-user" id="cart-user-icon"></i>
-
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>header</title>
+        <link rel="stylesheet" href="../header.css"/>
+        <script src="https://kit.fontawesome.com/3a3ccaffa9.js" crossorigin="anonymous"></script>
+        <script src="../include.js"></script>
+    </head>
+    <body>
+        <header>
+                <div id="top-bar" class="text-top-bar">
+                    <p>Mua sắm phụ kiện trang sức tại JewelryStore - Liên hệ : 0123456789</p>
                 </div>
-            </nav>
+                <nav id="menu-bar">
+                    <div class="box-bar-icon" ><a href="#" onclick="hienkhoidanhmuc()" ><i class="fa-solid fa-bars" id="cart-bar-icon"></i></a></div>
+                    <div class="name-store"><h1>Jewelry Store</h1></div>
+                    <ul class="text-menu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../introduce.html">Introduce</a></li>
+                        <li><a href="../product.html">Product</a></li>
+                        <li><a href="../blogs.html">Blogs</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
 
-        </header>
-</body>
-</html>
+                    <div class="box-icon">
+                        <i class="fa-solid fa-magnifying-glass" id="cart-search-icon"></i>
+                        <i class="fa-solid fa-cart-shopping " id="cart-shopping-icon"></i>
+                        <i class="fa-solid fa-circle-user" id="cart-user-icon"></i>
+
+                    </div>
+                </nav>
+            </header>
+            
+        </body>
+    </html>

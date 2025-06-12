@@ -7,34 +7,48 @@
     <title>Jewelry Store</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/3a3ccaffa9.js" crossorigin="anonymous"></script>
-
+    <script src="jquery/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
-
-    <script src="./include.js"></script>
-    <script>
-        loadHTML('#header', './template/header.html');
-        loadHTML('#footer', './template/footer.html');
-    </script>
     <div class="container">
-
         <div id="header"></div>
 
         <main>
+            <div class="box-center">
+                <nav class="new-menu-bar">
+                    <ul class="new-menu-content">
+                        <li><a href="#" style="font-weight: bold; color: rgb(73, 73, 73);"><hr/></li>
+                        <li><a href="#">Sản phẩm</a><a href="#" id="cart-list-icon"><i class="fa-solid fa-list"></i></a></li>
+                        <div class="box-product-bar">
+                            <ul class="box-content-new-bar">
+                                <li><a href="#">Nhẩn</a></li>
+                                <li><a href="#">Dây chuyền</a></li>
+                                <li><a href="#">Đồng hồ</a></li>
+                                <li><a href="#">Vòng tay</a></li>
+                                <li><a href="#">Khuyên tai</a></li>
+                            </ul>
+                        </div>
+                        <li><a href="#"><i class="fa-solid fa-cart-shopping" id="cart-shopping-icon" style="color: black;"></i>Giỏ hàng</a></li>
+                        <li><a href="#"><i class="fa-solid fa-circle-user" id="cart-user-icon" style="color: black;"></i>Đăng nhập</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </nav>
 
-            <div class="boxbanner">
-                <div class="box-video-banner">
-                    <video src="./image/video_nen_3.mp4" alt="video banner" loop muted autoplay></video>
-                </div>
+                <div class="boxbanner">
+                    <div class="box-video-banner">
+                        <video src="../image/video_nen_3.mp4" alt="video banner" loop muted autoplay></video>
+                    </div>
 
-                <div class="box-content-banner text-banner">
-                    <h2> Chương trình khuyến mãi</h2>
-                    <p> Giảm giá 20% với hóa đơn trên 5 triệu VND.</p>
-                    <div class="button-buy-now"><a href="#" class="text">Mua ngay</a></div>
+                    <div class="box-content-banner text-banner">
+                        <h2> Chương trình khuyến mãi</h2>
+                        <p> Giảm giá 20% với hóa đơn trên 5 triệu VND.</p>
+                        <div class="button-buy-now"><a href="#">Mua ngay</a></div>
+                    </div>
+
                 </div>
             </div>
-            <div class="mg"></div>
+            <div class="mg" style="background-color: #535252; height: 1px;"></div>
             <div class="box-content-introduce text-introduce">
                 Chào mừng đến với JewelryStore, thương hiệu của Việt Nam luôn là một phần không thể thiếu trong những
                 chuyến phiêu lưu ngoài trời của bạn kể từ những năm đầu của thế kỷ 21. Với niềm đam mê và chuyên môn của
@@ -43,26 +57,6 @@
                 <br />
                 <p>Khám phá những sản phẩm bán chạy nhất hiện tại của chúng tôi </p>
 
-            </div>
-            <div class="mg"></div>
-
-            <div class="boxbanner2">
-                <div class="box-item-banner">
-                    <div class="grid-item text-item-banner">
-                        <div>
-                            <h2>Danh mục sản phẩm</h2>
-                        </div>
-                        <ul>
-                            <li><a href="#">Nhẫn</a></li>
-                            <li><a href="#">Dây chuyền</a></li>
-                            <li><a href="#">Khuyên tai</a></li>
-                            <li><a href="#">Lắc tay</a></li>
-                            <li><a href="#">Đồng hồ</a></li>
-                        </ul>
-                    </div>
-                    <div class="grid-item"><img src="./image/anh-nen-11.png" class="boxbanner2-img" alt="anh-nen-11">
-                    </div>
-                </div>
             </div>
             <div class="mg"></div>
             <!-- san pham moi  -->
@@ -112,8 +106,8 @@
                 <hr />
             </div>
 
-            <div class="boxbanner2 boxbanner3">
-                <div class="grid-item grid-item-banner3 content-banner3">
+            <div class="boxbanner3">
+                <div class="grid-item-banner3 content-banner3">
                     <h2>Nâng Tầm Vẻ Đẹp Với Trang Sức JewelryStory Tinh Hoa Việt Nam Vươn Tầm Thế Giới</h2>
                     <p>Trong hơn 60 năm, JewelryStory đã kiến tạo những thiết kế trang sức tinh tế, hòa quyện giữa di
                         sản Việt Nam, kỹ thuật chế tác bậc thầy và sự am hiểu sâu sắc về vẻ đẹp vượt thời gian.
@@ -135,7 +129,11 @@
         <div id="footer"></div>
 
     </div>
-
+    <script src="include.js"></script>
+    <script>
+        loadHTML('#header', './template/header.html');
+        loadHTML('#footer', './template/footer.html');
+    </script>
 </body>
 
 </html>
